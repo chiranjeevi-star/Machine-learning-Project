@@ -1,5 +1,2 @@
 Flask
-gunicorn
-sklearn
-pandas
-numpy
+
