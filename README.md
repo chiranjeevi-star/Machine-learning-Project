@@ -5,6 +5,7 @@ Requirement
 2. [Heroku Account](https://dashboard.heroku.com/login)
 3. [VS Code IDE](https://code.visualstudio.com/download)
 4. [GIT Cli](https://git-scm.com/downloads)
+5. [GIT Documentation](https://git-scm.com/docs/gittutorial)
 
 
 creating conda environment
@@ -49,5 +50,52 @@ git commit -m 'message'
 
 '''
 
+To send vesrion/changes to github
+'''
+git push origin main
 
+'''
+
+To check remote url
+'''
+git remote -v
+
+'''
+
+To set up CI/CD pipeline in heroku we need 3 information
+
+1. HEROKU_email
+2. HEROKU_API_KEY
+3. HEROKU_APP_NAME
+
+Build Docker image
+'''
+docker build -t <image_name>:<tag_name> .
+
+'''
+Note: Image name for docker must be lower case
+
+To list docker images
+'''
+docker images
+
+'''
+
+To run docker image
+'''
+docker run -p 5000:5000 -e PORT=5000 imgae id
+
+'''
+
+To check running containers in docker
+'''
+docker ps
+
+'''
+
+To stop docker container
+'''
+docker stop <container_id>
+
+'''
 
